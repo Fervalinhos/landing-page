@@ -1,6 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { CiCalendar } from "react-icons/ci";
+import { RiSpeedLine, RiGovernmentLine } from "react-icons/ri"
+import { TbPigMoney, TbAutomation } from "react-icons/tb";
+import { GoGraph } from "react-icons/go";
 import ReactPlayer from 'react-player'
 
 export default function Home() {
@@ -34,13 +37,40 @@ export default function Home() {
 
         </div>
 
-        <div className={styles.list}>
+        <div className={styles.list_container}>
           <div className={styles.list_title_container}>
             <h1 className={styles.title_list}>A automações sob medida para suas rotinas</h1>
             <p className={styles.subtitle_container}>As plataformas low-code/no-code tornaram-se essenciais para democratizar a hiperautomação, inclusive em empresas de médio porte. Essa tecnologia permite que usuários desenvolvam automações sob medida para suas rotinas, garantindo agilidade, controle e alinhamento às diretrizes corporativas.</p>
             <p className={styles}>A plataforma apresenta diversos benefícios:</p>
           </div>
 
+          <div className={styles.list}>
+            <div className={styles.list_li}>
+              <div>
+                <RiSpeedLine />
+              </div>
+            </div>
+            <div className={styles.list_li}>
+              <div>
+                <TbPigMoney />
+              </div>
+            </div>
+            <div className={styles.list_li}>
+              <div>
+                <TbAutomation />
+              </div>
+            </div>
+            <div className={styles.list_li}>
+              <div>
+                <RiGovernmentLine />
+              </div>
+            </div>
+            <div className={styles.list_li}>
+              <div>
+                <GoGraph />
+              </div>
+            </div>
+          </div>
 
         </div>
 
