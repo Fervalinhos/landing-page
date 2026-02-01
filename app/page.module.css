@@ -1,3 +1,5 @@
+.page {}
+
 .information_container {
   background: #0e1733;
   background: linear-gradient(90deg, rgb(12, 20, 45) 0%, rgba(73, 87, 107, 1) 100%);
@@ -11,6 +13,82 @@
   height: 20rem;
   margin-right: 20rem;
 }
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.text_especial {
+  font-size: 1.9rem;
+  margin-bottom: 1.9rem;
+  background: linear-gradient(to left, rgb(253, 155, 155), rgb(150, 204, 206));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.texts_information_container {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.yt_container {
+  width: 100%;
+  height: 20rem;
+}
+
+.button {
+  background-color: #040a1a;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 3rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  bottom: 1rem;
+}
+
+.calendar_icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.list {
+  padding: 6rem;
+
+}
+
+.list_title_container {
+  text-align: center;
+}
+.title_list {
+  color: #344053;
+  margin-bottom: 2rem;
+}
+.subtitle_container {
+  color: #64748b;
+    margin-bottom: 2rem;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   .information_container {
@@ -35,56 +113,4 @@
     position: none;
     top: 2rem;
   }
-}
-
-.title {
-  font-size: 4rem;
-  margin-bottom: 0.3rem;
-}
-
-.subtitle {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-.text_especial {
-  font-size: 1.9rem;
-  margin-bottom: 1.9rem;
-}
-
-.texts_information_container {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.container_flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.yt_container {
-  background-color: red;
-  width: 100%;
-  height: 20rem;
-}
-
-.button {
-  background-color: #040a1a;
-  color: white;
-  border: none;
-  font-size: 1rem;
-  border-radius: 3rem;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  bottom: 2.5rem;
-}
-
-.calendar_icon {
-  font-size: 1.5rem
 }
