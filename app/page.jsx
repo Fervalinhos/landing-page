@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className={styles.list_container}>
           <div className={styles.list_title_container}>
-            <h1 className={styles.title_list}>A automações sob medida para suas rotinas</h1>
+            <h1 className={styles.title_list}>A <strong>automações sob medida para suas rotinas</strong></h1>
             <p className={styles.subtitle_container}>As plataformas low-code/no-code tornaram-se essenciais para democratizar a hiperautomação, inclusive em empresas de médio porte. Essa tecnologia permite que usuários desenvolvam automações sob medida para suas rotinas, garantindo agilidade, controle e alinhamento às diretrizes corporativas.</p>
             <p className={styles}>A plataforma apresenta diversos benefícios:</p>
           </div>
