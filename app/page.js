@@ -46,29 +46,42 @@ export default function Home() {
 
           <div className={styles.list}>
             <div className={styles.list_li}>
-              <div>
+              <div className={styles.icon_list}>
                 <RiSpeedLine />
               </div>
+              <h2>Agilidade</h2>
+              <p>Aceleração significativa no tempo de desenvolvimento e implantação.</p>
             </div>
             <div className={styles.list_li}>
-              <div>
+              <div className={styles.icon_list}>
                 <TbPigMoney />
               </div>
+              <h2>Redução de custos</h2>
+              <p>Menor dependência de equipes externas.</p>
             </div>
             <div className={styles.list_li}>
-              <div>
+              <div className={styles.icon_list}>
                 <TbAutomation />
+
               </div>
+              <h2>Autonomia e inovação</h2>
+              <p>Maior protagonismo das áreas de negócio.</p>
             </div>
             <div className={styles.list_li}>
-              <div>
+              <div className={styles.icon_list}>
                 <RiGovernmentLine />
+
               </div>
+              <h2>Governança</h2>
+              <p>Maior protagonismo das áreas de negócio.</p>
             </div>
             <div className={styles.list_li}>
-              <div>
+              <div className={styles.icon_list}>
                 <GoGraph />
+
               </div>
+              <h2>Escalabilidade</h2>
+              <p>Adaptação simples e segura conforme o crescimento da empresa.</p>
             </div>
           </div>
 

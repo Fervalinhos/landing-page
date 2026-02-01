@@ -106,17 +106,36 @@
   margin: 1rem;
   margin-top: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .list_li:hover {
   background: #0F172A;
   background: linear-gradient(153deg, rgba(15, 23, 42, 1) 33%, rgba(72, 86, 106, 1) 100%);
- transform: translateY(-1rem) scale(1.07);
+  transform: translateY(-1rem) scale(1.07);
   transition: 0.9s;
   color: white;
-  z-index:30
+  z-index: 30
 }
 
+.icon_list {
+  background-color: white;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.list_li h2 {
+  margin-bottom: 1.7rem;
+}
 
 
 
