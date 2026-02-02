@@ -131,68 +131,72 @@ export default function Home() {
 
         <div className={styles.crud_container}>
           <div className={styles.input_container1}>
-            <label>Nome Completo</label>
+            <label className={styles.label}>Nome Completo</label>
             <input className={styles.input} type="text" name="nome" placeholder="Digite seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container1}>
-            <label>
+            <label className={styles.label}>
               Telefone
             </label>
             <input className={styles.input} type="text" name="telefone" placeholder="Digite seu telefone" value={telefone} onChange={(e) => setTelefone(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container1}>
-            <label>
+            <label className={styles.label}>
               E-mail
             </label>
             <input className={styles.input} type="text" name="email" placeholder="Digite seu melhor e-mail" value={email} onChange={(e) => setEmail(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container1}>
-            <label>
+            <label className={styles.label}>
               Cargo 
             </label>
             <input className={styles.input} type="text" name="cargo" placeholder="Digite seu cargo" value={cargo} onChange={(e) => setCargo(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container2}>
-            <label>
+            <label className={styles.label}>
               Nome da Empresa
             </label>
             <input className={styles.input} type="text" name="empresa" placeholder="Digite sua empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container1}>
-            <label>
+            <label className={styles.label}>
               CNPJ
             </label>
             <input className={styles.input} type="text" name="cnpj" placeholder="Digite seu cnpj" value={cnpj} onChange={(e) => setCnpj(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container1}>
-            <label>
+            <label className={styles.label}>
               Setor 
             </label>
             <input className={styles.input} type="text" name="setor" placeholder="Digite seu setor" value={setor} onChange={(e) => setSetor(e.target.value)} ></input>
           </div>
 
           <div className={styles.input_container2}>
-            <label>
+            <label className={styles.label}>
               Status 
             </label>
             <input className={styles.input} type="text" name="status" placeholder="Digite seu status" value={status} onChange={(e) => setStatus(e.target.value)} ></input>
           </div>
 
-          <div className={styles.input_container}>
-            <label>
+          <div className={styles.detalhes_input}>
+            <label className={styles.label}>
               Detalhe sua demanda
             </label>
-            <input className={styles.detalhes_input} type="text" name="detalhe" placeholder="Digite aqui" value={detalhe} onChange={(e) => setDetalhe(e.target.value)} ></input>
+            <input type="text" name="detalhe" placeholder="" value={detalhe} onChange={(e) => setDetalhe(e.target.value)} ></input>
           </div>
 
-          <div>
-            <h1>SELECT</h1>
+          <div className={styles.handle_container}>
+            <h1>Select</h1>
+            <div>
+              <p>Gostaria de acessar nossos conteúdos pelo WhatsApp?</p>
+              <p>Cadastre-se e receba insights e novidades pelo seu celular.</p>
+            </div>
             <button onClick={() => handlesubimit()}>Cadastrar-se</button>
           </div>
         </div>
