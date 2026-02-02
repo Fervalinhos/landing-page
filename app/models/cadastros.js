@@ -11,3 +11,5 @@ class Cadastros {
         return this.cadastros
     }
 }
+
+export default Cadastros
