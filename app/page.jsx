@@ -129,16 +129,67 @@ export default function Home() {
 
         </div>
 
-        <div>
-          <input type="text" name="nome" placeholder="Digite seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} ></input>
-          <input type="text" name="telefone" placeholder="Digite seu telefone" value={telefone} onChange={(e) => setTelefone(e.target.value)} ></input>
-          <input type="text" name="email" placeholder="Digite seu melhor e-mail" value={email} onChange={(e) => setEmail(e.target.value)} ></input>
-          <input type="text" name="cargo" placeholder="Digite seu cargo" value={cargo} onChange={(e) => setCargo(e.target.value)} ></input>
-          <input type="text" name="empresa" placeholder="Digite sua empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} ></input>
-          <input type="text" name="cnpj" placeholder="Digite seu cnpj" value={cnpj} onChange={(e) => setCnpj(e.target.value)} ></input>
-          <input type="text" name="setor" placeholder="Digite seu setor" value={setor} onChange={(e) => setSetor(e.target.value)} ></input>
-          <input type="text" name="status" placeholder="Digite seu status" value={status} onChange={(e) => setStatus(e.target.value)} ></input>
-          <input type="text" name="detalhe" placeholder="Digite aqui" value={detalhe} onChange={(e) => setDetalhe(e.target.value)} ></input>
+        <div className={styles.crud_container}>
+          <div className={styles.input_container1}>
+            <label>Nome Completo</label>
+            <input className={styles.input} type="text" name="nome" placeholder="Digite seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container1}>
+            <label>
+              Telefone
+            </label>
+            <input className={styles.input} type="text" name="telefone" placeholder="Digite seu telefone" value={telefone} onChange={(e) => setTelefone(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container1}>
+            <label>
+              E-mail
+            </label>
+            <input className={styles.input} type="text" name="email" placeholder="Digite seu melhor e-mail" value={email} onChange={(e) => setEmail(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container1}>
+            <label>
+              Cargo 
+            </label>
+            <input className={styles.input} type="text" name="cargo" placeholder="Digite seu cargo" value={cargo} onChange={(e) => setCargo(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container2}>
+            <label>
+              Nome da Empresa
+            </label>
+            <input className={styles.input} type="text" name="empresa" placeholder="Digite sua empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container1}>
+            <label>
+              CNPJ
+            </label>
+            <input className={styles.input} type="text" name="cnpj" placeholder="Digite seu cnpj" value={cnpj} onChange={(e) => setCnpj(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container1}>
+            <label>
+              Setor 
+            </label>
+            <input className={styles.input} type="text" name="setor" placeholder="Digite seu setor" value={setor} onChange={(e) => setSetor(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container2}>
+            <label>
+              Status 
+            </label>
+            <input className={styles.input} type="text" name="status" placeholder="Digite seu status" value={status} onChange={(e) => setStatus(e.target.value)} ></input>
+          </div>
+
+          <div className={styles.input_container}>
+            <label>
+              Detalhe sua demanda
+            </label>
+            <input className={styles.detalhes_input} type="text" name="detalhe" placeholder="Digite aqui" value={detalhe} onChange={(e) => setDetalhe(e.target.value)} ></input>
+          </div>
 
           <div>
             <h1>SELECT</h1>
