@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import { CiCalendar } from "react-icons/ci";
@@ -6,7 +7,20 @@ import { TbPigMoney, TbAutomation } from "react-icons/tb";
 import { GoGraph } from "react-icons/go";
 import ReactPlayer from 'react-player'
 
+import { use, useEffect, useState } from 'react';
+
 export default function Home() {
+
+  const [nome, setNome] = useState('');
+  const [telefone, setTelefone] = useState(0);
+  const [email, setEmail] = useState('');
+  const [cargo, setCargo] = useState('');
+  const [empresa, setEmpresa] = useState('');
+  const [cnpj, setCnpj] = useState(0);
+  const [setor, setSetor] = useState('');
+  const [status, setStatus] = useState('');
+  const [detalhe, setDetalhe] = useState('');
+
   return (
     <main className={styles.main_page}>
       <div className={styles.page}>
@@ -88,7 +102,15 @@ export default function Home() {
         </div>
 
         <div>
-          
+          <input type="text" name="nome" placeholder="Digite seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} ></input>
+          <input type="text" name="telefone" placeholder="Digite seu telefone" value={telefone} onChange={(e) => setTelefone(e.target.value)} ></input>
+          <input type="text" name="email" placeholder="Digite seu melhor e-mail" value={email} onChange={(e) => setEmail(e.target.value)} ></input>
+          <input type="text" name="cargo" placeholder="Digite seu cargo" value={cargo} onChange={(e) => setCargo(e.target.value)} ></input>
+          <input type="text" name="empresa" placeholder="Digite sua empresa" value={empresa} onChange={(e) => setEmpresa(e.target.value)} ></input>
+          <input type="text" name="cnpj" placeholder="Digite seu cnpj" value={cnpj} onChange={(e) => setCnpj(e.target.value)} ></input>
+          <input type="text" name="setor" placeholder="Digite seu setor" value={setor} onChange={(e) => setSetor(e.target.value)} ></input>
+          <input type="text" name="status" placeholder="Digite seu status" value={status} onChange={(e) => setStatus(e.target.value)} ></input>
+          <input type="text" name="detalhe" placeholder="Digite aqui" value={detalhe} onChange={(e) => setDetalhe(e.target.value)} ></input>
         </div>
 
       </div>
