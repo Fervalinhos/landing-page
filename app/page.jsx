@@ -7,19 +7,47 @@ import { TbPigMoney, TbAutomation } from "react-icons/tb";
 import { GoGraph } from "react-icons/go";
 import ReactPlayer from 'react-player'
 
+import Cadastros from "./models/cadastros";
+
 import { use, useEffect, useState } from 'react';
+
+const cadastros = new Cadastros();
 
 export default function Home() {
 
   const [nome, setNome] = useState('');
-  const [telefone, setTelefone] = useState(0);
+  const [telefone, setTelefone] = useState('');
   const [email, setEmail] = useState('');
   const [cargo, setCargo] = useState('');
   const [empresa, setEmpresa] = useState('');
-  const [cnpj, setCnpj] = useState(0);
+  const [cnpj, setCnpj] = useState('');
   const [setor, setSetor] = useState('');
   const [status, setStatus] = useState('');
   const [detalhe, setDetalhe] = useState('');
+
+  const handlesubimit = async () => {
+    console.log("passou aq");
+
+    const novoCadastro = {
+      nome, telefone, email, cargo, empresa, cnpj, setor, status, detalhe
+    };
+    cadastros.addCadastro(novoCadastro);
+    console.log(cadastros.getCadastros());
+    clearFields();
+
+  }
+
+  const clearFields = () => {
+    setNome('');
+    setTelefone('');
+    setEmail('');
+    setCargo('');
+    setEmpresa('');
+    setCnpj('');
+    setSetor('');
+    setStatus('');
+    setDetalhe('')
+  }
 
   return (
     <main className={styles.main_page}>
@@ -111,6 +139,11 @@ export default function Home() {
           <input type="text" name="setor" placeholder="Digite seu setor" value={setor} onChange={(e) => setSetor(e.target.value)} ></input>
           <input type="text" name="status" placeholder="Digite seu status" value={status} onChange={(e) => setStatus(e.target.value)} ></input>
           <input type="text" name="detalhe" placeholder="Digite aqui" value={detalhe} onChange={(e) => setDetalhe(e.target.value)} ></input>
+
+          <div>
+            <h1>SELECT</h1>
+            <button onClick={() => handlesubimit()}>Cadastrar-se</button>
+          </div>
         </div>
 
       </div>
